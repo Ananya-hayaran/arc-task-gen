@@ -1,0 +1,7 @@
+livekit-agents[silero]~=1.6
+livekit-plugins-rime~=1.6
+livekit-api
+python-dotenv
+fastapi
+uvicorn
+pydantic
