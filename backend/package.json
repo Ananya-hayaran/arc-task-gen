@@ -1,0 +1,14 @@
+{
+  "name": "flowvoice-backend",
+  "version": "0.1.0",
+  "description": "Interruption-safe voice AI backend, powered by LiveKit + Rime.",
+  "private": true,
+  "scripts": {
+    "token-server": "uvicorn token_server:app --port 8000 --reload",
+    "agent:dev": "python agent.py dev",
+    "agent:start": "python agent.py start",
+    "test": "python tests/test_generation_fencing.py",
+    "stress-test": "python evaluation/stress_test.py --room flowvoice-eval --trials 20 --delay-ms 2000",
+    "generate-evidence": "python evaluation/generate_evidence.py"
+  }
+}

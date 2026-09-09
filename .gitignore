@@ -1,0 +1,13 @@
+# Never commit real credentials.
+.env
+*.env
+!*.env.example
+
+# Local convenience zips/archives sometimes made while developing — these
+# have previously ended up containing a full .env by accident. Don't commit
+# them; if you need to hand off a snapshot, re-zip from a clean checkout.
+*.zip
+
+# Large local recordings — keep these out of git, upload the final demo
+# recording via the submission form/link instead.
+*.mp4
